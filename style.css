@@ -1,7 +1,240 @@
+/*
 #menu
 {
 	position: fixed;
 	width: 100%;
-	height: 35px;
-	background: white;
+	height:35px;
+	text-align: center;
+	color: #f2f2f2;
+	text-decoration: none;
+	font-size: 29px;
+	overflow: hidden;
+	background-color: rgb(35, 145, 189);
+	
+}
+*/
+#menu {
+	
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	height: top;
+	background-color: #444343;
+	border-radius: 8px;
+	font-size: 0;
+  }
+/*li{
+	display: inline;
+}
+*/
+ li {
+	line-height: 50px;
+	height: 100%;
+	font-size: 20px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+  }
+  a{
+	  text-align: center;
+	  color: white;
+	  text-decoration: none;
+  }
+
+  #menu .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+  }
+  li:nth-child(1) {
+	width: 140px;
+  }
+  li:nth-child(2) {
+	width: 150px;
+  }
+  li:nth-child(3) {
+	width: 150px;
+  }
+  li:nth-child(4) {
+	width: 100px;
+  }
+  li:nth-child(5) {
+	width: 120px;
+  }
+  li:nth-child(6){
+	  width: 100px;
+  }
+  li:nth-child(7){
+	  width: 150px
+  }
+  #menu .start-#about, li:nth-child(1):hover~.animation {
+	width: 140px;
+	left:300px;
+	background-color: #1abc9c;
+  }
+  #menu .start-#photos, li:nth-child(2):hover~.animation {
+	width: 150px;
+	left: 440px;
+	background-color: #3498db;
+  }
+  #menu .start-#playlist, li:nth-child(3):hover~.animation {
+	width: 150px;
+	left: 590px;
+	background-color: #9b59b6;
+  }
+  #menu .start-#like, li:nth-child(4):hover~.animation {
+	width: 100px;
+	left: 740px;
+	background-color: #e67e22;
+  }
+  #menu .start-#qrcoder, li:nth-child(5):hover~.animation {
+	width: 120px;
+	left: 840px;
+	background-color: #af1f67;
+  }
+  #menu .start-#spa, li:nth-child(6):hover~.animation {
+	width: 90px;
+	left: 960px;
+	background-color: #4de259;
+  }
+  #menu .start-#contact, li:nth-child(7):hover~.animation {
+	width: 150px;
+	left: 1060px;
+	background-color: #e1f341;
+  }
+  span {
+    color: #2BD6B4;
+}
+h1{
+	text-align: center;
+	font-family: Tahoma;
+	font: bold;
+
+}
+
+h1:before,
+h1:after {
+  background-color: #444343;
+  content: "";
+  display: inline-block;
+  height: 10px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+h1:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+h1:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+#menu .FLogo{
+	
+	float: left;
+}
+ .Flogo{
+	width: 100px;
+	height: 70px;
+
+}
+#menu .SLogo{
+	float: right;
+}
+.Slogo{
+	width: 100px;
+	height: 70px;
+
+}
+#images{
+	text-align: center;
+}
+#image{
+	
+	height: 500px;
+}
+.video{
+   text-align: center;
+   padding-top: 100px;
+}
+.Sub-title-video{
+	text-align: center;
+	font-size: 18px;
+	font-family: Tahoma;
+	font: bolder;
+}
+.LikeBut{
+	text-align: center;
+	font-size: 30px;
+}
+.pelefacebook{
+	text-align: center;
+	font-size: 30px;
+}
+.LikeThePageTitle{
+	text-align: center;
+	font-size: 18px;
+	font-family: Tahoma;
+	font: bolder;
+}
+.PeleFaceBookTitle{
+	text-align: center;
+	font-size: 18px;
+	font-family: Tahoma;
+	font: bold;
+}
+html {
+	min-height: 100%;
+	background-image: url("https://d2bgjx2gb489de.cloudfront.net/gbb-blogs/wp-content/uploads/2020/12/15135147/Aerial-view-of-Rio-de-Janeiro-with-Christ-Redeemer-and-Corcovado-Mountain.-Brazil.-Latin-America-horizontal.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+ }
+ .QRCODE{
+	text-align: center;
+ }
+ #FirstQuestion{
+	 text-align: right;
+	 font-family: Tahoma;
+	 font-size: 17px;
+	 font:bold;
+	 
+ }
+ #FirstQuestion span {
+	 background-color: white;
+	 color: black;
+ }
+ #answer1{
+	 text-align: right;
+	 font-family: tahoma;
+	 font-size: 15px;
+ }
+ #answer1 span{
+ 	background-color: white;
+	 color: black;
+ }
+ #SecondQuestion{
+	text-align: right;
+	font-family: Tahoma;
+	font-size: 17px;
+	font:bold;
+}
+#SecondQuestion span{
+	background-color: white;
+	color: black;
+}
+#send{
+	size: 20px;
 }
