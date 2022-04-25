@@ -206,6 +206,10 @@ html {
  }
  .QRCODE{
 	text-align: center;
+	size: 3em;
+ }
+ #QRC{
+	 size: 3em;
  }
  #FirstQuestion{
 	 text-align: right;
